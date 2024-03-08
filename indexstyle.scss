@@ -1,0 +1,19 @@
+@keyframes scrollBg {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-330px);
+    }
+  }
+  
+  .scroll-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 330px;
+    background-color: #E8BA9B;
+    background-image: url('image/fondo_ma.png');
+    background-size: cover;
+    animation: scrollBg 35s linear forwards;
+  }

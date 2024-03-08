@@ -1,0 +1,696 @@
+/* Tallos */
+.flower_wrapper{
+    position: absolute;
+    left: 50%;
+    bottom: -3vmin;
+    animation: moving-flower-1 4s linear infinite;
+}
+
+.flower_wrapper2{
+    position: absolute;
+    left: 70%;
+    bottom: -2vmin;
+    animation: moving-flower-1 4s linear infinite;
+}
+
+.flower_wrapper3{
+    position: absolute;
+    left: 30%;
+    bottom: -2vmin;
+    animation: moving-flower-1 4s linear infinite;
+}
+
+/* Tallo*/
+.flower_stem{
+    width: 2vmin;
+    height: 69vmin;
+    background-image: var(--line-color);
+    border-radius: 4vmin;
+    animation-delay: 0.3s;
+}
+
+.flower_stem2{
+    width: 1vmin;
+    height: 40vmin;
+    background-image: var(--line-color);
+    border-radius: 4vmin;
+    animation-delay: 0.3s;
+}
+
+.flower_stem3{
+    width: 1vmin;
+    height: 40vmin;
+    background-image: var(--line-color);
+    border-radius: 4vmin;
+    animation-delay: 0.3s;
+}
+
+
+/* Centro*/
+.flower_center{
+    position: absolute;
+    top: 0vmin;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%) rotate(-10deg);
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    background: var(--flower-center);
+    animation: open-flower-middle 2s 0.4s backwards;
+}
+
+.flower_center2{
+    position: absolute;
+    top: 0vmin;
+    left: 70%;
+    z-index: 5;
+    transform: translateX(-51%) rotate(-10deg);
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    background: var(--flower-center);
+    animation: open-flower-middle 2s 0.4s backwards;
+}
+
+.flower_center3{
+    position: absolute;
+    top: 0vmin;
+    left: 54%;
+    z-index: 5;
+    transform: translateX(-53%) rotate(-10deg);
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    background: var(--flower-center);
+    animation: open-flower-middle 2s 0.4s backwards;
+}
+
+
+.flower_petal{
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    bottom: 59vmin;
+    transform: translateX(-50%);
+    width: 9vmin;
+    height: 17vmin;
+    height: 21vmin;
+    background: var(--petal-color);
+    clip-path: ellipse(55% 50% at 50% 53%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.flower_petalRL{
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    bottom: 33vmin;
+    transform: translateX(-50%);
+    width: 7vmin;
+    height: 16vmin;
+    background: var(--petal-color);
+    clip-path: ellipse(52% 48% at 47% 48%);
+    transform-origin: center bottom;
+    animation: open-flower 2s 1s backwards;
+}
+
+.flower_petal-1{
+    border-radius: 64% 62% 61% / 80% 80% 20% 20%;
+    background-image: none;
+    background: var(--petal-color);
+    animation: open-flower 1.4s 1s backwards;
+}
+
+.flower_petal-2{
+    transform: translateX(-50%) rotate(-30deg);
+}
+.flower_petal-3{
+    transform: translateX(-50%) rotate(-60deg);
+}
+.flower_petal-4{
+    transform: translateX(-50%) rotate(-90deg);
+}
+.flower_petal-5{
+    transform: translateX(-50%) rotate(-120deg);
+}
+.flower_petal-6{
+    transform: translateX(-50%) rotate(-150deg);
+}
+.flower_petal-7{
+    transform: translateX(-50%) rotate(30deg);
+}
+.flower_petal-8{
+    transform: translateX(-50%) rotate(60deg);
+}
+.flower_petal-9{
+    transform: translateX(-50%) rotate(90deg);
+}
+.flower_petal-10{
+    transform: translateX(-50%) rotate(120deg);
+}
+.flower_petal-11{
+    transform: translateX(-50%) rotate(150deg);
+}
+.flower_petal-12{
+    transform: translateX(-50%) rotate(180deg);
+}
+
+
+.flower_petalP2-12{
+    border-radius: 62% 66% 58% / 80% 80% 20% 20%;
+    background-image: none;
+    background: var(--petal-color);
+    animation: open-flower 1.4s 1s backwards;
+}
+
+.flower_petal-22{
+    transform: translateX(-50%) rotate(-30deg);
+}
+.flower_petal-32{
+    transform: translateX(-50%) rotate(-60deg);
+}
+.flower_petal-42{
+    transform: translateX(-50%) rotate(-90deg);
+}
+.flower_petal-52{
+    transform: translateX(-50%) rotate(-120deg);
+}
+.flower_petal-62{
+    transform: translateX(-50%) rotate(-150deg);
+}
+.flower_petal-72{
+    transform: translateX(-50%) rotate(30deg);
+}
+.flower_petal-82{
+    transform: translateX(-50%) rotate(60deg);
+}
+.flower_petal-92{
+    transform: translateX(-50%) rotate(90deg);
+}
+.flower_petal-102{
+    transform: translateX(-50%) rotate(120deg);
+}
+.flower_petal-112{
+    transform: translateX(-50%) rotate(150deg);
+}
+.flower_petal-122{
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.flower_petal-13{
+    border-radius: 62% 66% 58% / 80% 80% 20% 20%;
+    background-image: none;
+    background: var(--petal-color);
+    animation: open-flower 1.4s 1s backwards;
+}
+
+.flower_petal-23{
+    transform: translateX(-50%) rotate(-30deg);
+}
+.flower_petal-33{
+    transform: translateX(-50%) rotate(-60deg);
+}
+.flower_petal-43{
+    transform: translateX(-50%) rotate(-90deg);
+}
+.flower_petal-53{
+    transform: translateX(-50%) rotate(-120deg);
+}
+.flower_petal-63{
+    transform: translateX(-50%) rotate(-150deg);
+}
+.flower_petal-73{
+    transform: translateX(-50%) rotate(30deg);
+}
+.flower_petal-83{
+    transform: translateX(-50%) rotate(60deg);
+}
+.flower_petal-93{
+    transform: translateX(-50%) rotate(90deg);
+}
+.flower_petal-103{
+    transform: translateX(-50%) rotate(120deg);
+}
+.flower_petal-113{
+    transform: translateX(-50%) rotate(150deg);
+}
+.flower_petal-123{
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.flower_leaf{
+    position: absolute;
+    left: 60%;
+    bottom: 18vmin;
+    transform: translateX(-45%) rotate(80deg);
+    width: 7vmin;
+    height: 17vmin;
+    background: var(--leaf-color);
+    clip-path: none;
+    border-radius: 10vmin 2vmin 10vmin 2vmin;
+    transform-origin: center bottom;
+}
+
+
+.flower_leafRL{
+    position: absolute;
+    left: 60%;
+    bottom: 18vmin;
+    transform: translateX(-45%) rotate(80deg);
+    width: 4vmin;
+    height: 9vmin;
+    background: var(--leaf-color);
+    clip-path: none;
+    border-radius: 10vmin 2vmin 10vmin 2vmin;
+    transform-origin: center bottom;
+}
+
+.flower_leaf-1{
+    bottom: 18vmin;
+    transform: translateX(-45%) rotate(80deg);
+}
+
+.flower_leaf-2{
+    bottom: 23vmin;
+    transform: translateX(-55%) rotate(-80deg);
+}
+
+
+.flower_leaf-12{
+    bottom: 7vmin;
+    transform: translateX(-45%) rotate(80deg);
+}
+
+.flower_leaf-22{
+    bottom: 11vmin;
+    transform: translateX(-55%) rotate(-80deg);
+}
+
+.flower_leaf-13{
+    bottom: 7vmin;
+    transform: translateX(-45%) rotate(80deg);
+}
+
+.flower_leaf-23{
+    bottom: 11vmin;
+    transform: translateX(-55%) rotate(-80deg);
+}
+
+.grow-ans, .growing-grass {
+    position: absolute;
+    z-index: 1; /* Detrás de los girasoles */
+}
+
+:root {
+    --color-bg: linear-gradient(to top, #425c61, #000); 
+    --line-color: linear-gradient(to left top, #82ff86 20%, #144425, #104e1c);
+    --flower-center: radial-gradient(circle, #000, #ff5e00);
+    --leaf-color: radial-gradient(circle, #82ff86, #104e1c);
+    --petal-color: radial-gradient(circle, #ff5e00, #ffbb00);
+}
+
+body{
+    background-image: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.flower_light{
+    position: absolute;
+    bottom: 70vmin;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    animation: light-ans 4s linear infinite backwards;
+}
+
+
+.flower_lightR,
+.flower_lightL{
+    position: absolute;
+    bottom: 50vmin;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    animation: light-ans 4s linear infinite backwards;
+}
+    
+    .flower_light-1{
+        left: -2vmin;
+        animation-delay: 1s;
+    }
+
+    .flower_light-2{
+        left: 3vmin;
+        animation-delay: 0.5s;
+    }
+
+    .flower_light-3{
+        left: -6vmin;
+        animation-delay: 0.3s;
+    }
+
+    .flower_light-4{
+        left: 6vmin;
+        animation-delay: 0.9s;
+    }
+
+    .flower_light-5{
+        left: -1vmin;
+        animation-delay: 1.5s;
+    }
+
+    .flower_light-6{
+        left: -4vmin;
+        animation-delay: 3s;
+    }
+
+    .flower_light-7{
+        left: 3vmin;
+        animation-delay: 2s;
+    }
+
+    .flower_light-8{
+        left: -6vmin;
+        animation-delay: 3.5s;
+    }
+
+.light{
+    position: absolute;
+    bottom: 0vmin;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: rgb(255, 251, 0);
+    border-radius: 50%;
+    filter: blur(0.2vmin);
+    animation: light-ans-background 7s linear infinite backwards;
+}
+    
+
+    .light-1{
+        left: 10vmin;
+        animation-delay: 1s;
+    }
+
+    .light-2{
+        left: 20vmin;
+        animation-delay: 0.5s;
+    }
+
+    .light-3{
+        left: 60vmin;
+        animation-delay: 0.3s;
+    }
+
+    .light-4{
+        left: 80vmin;
+        animation-delay: 0.9s;
+    }
+
+    .light-5{
+        left: 45vmin;
+        animation-delay: 1.5s;
+    }
+
+    .light-6{
+        left: 10vmin;
+        animation-delay: 3s;
+    }
+
+    .light-7{
+        left: 90vmax;
+        animation-delay: 2s;
+    }
+
+    .light-8{
+        left: 60vmax;
+        animation-delay: 3.5s;
+    }
+
+    .light-9{
+        left: 70vmax;
+        animation-delay: 2s;
+    }
+
+    .light-10{
+        left: 95vmax;
+        animation-delay: 3.5s;
+    }
+
+    .light-11{
+        left: 75vmax;
+        animation-delay: 3s;
+    }
+
+    .light-12{
+        left: 85vmax;
+        animation-delay: 0.5s;
+    }
+
+@keyframes open-flower-leaves{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+}
+
+@keyframes open-flower{
+    0%{
+        transform: translateX(-50%) rotate(0);
+    }
+}
+
+@keyframes open-flower-middle{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%) scale(0);
+    }
+}
+
+@keyframes light-ans {
+    0% {
+      opacity: 0;
+      transform: translateY(0vmin);
+    }
+  
+    25% {
+      opacity: 1;
+      transform: translateY(-5vmin) translateX(-2vmin);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: translateY(-15vmin) translateX(2vmin);
+      filter: blur(0.2vmin);
+    }
+  
+    75% {
+      transform: translateY(-20vmin) translateX(-2vmin);
+      filter: blur(0.2vmin);
+    }
+  
+    100% {
+      transform: translateY(-30vmin);
+      opacity: 0;
+      filter: blur(1vmin);
+    }
+}
+
+@keyframes light-ans-background {
+    0% {
+      opacity: 0;
+      transform: translateY(0vmin);
+    }
+  
+    25% {
+      opacity: 1;
+      transform: translateY(-10vmin) translateX(-2vmin);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: translateY(-20vmin) translateX(2vmin);
+      filter: blur(0.2vmin);
+    }
+  
+    60% {
+      transform: translateY(-30vmin) translateX(-2vmin);
+      filter: blur(0.2vmin);
+    }
+  
+    70% {
+        transform: translateY(-40vmin) translateX(2vmin);
+        filter: blur(0.2vmin);
+    }
+
+    80% {
+        transform: translateY(-50vmin) translateX(-2vmin);
+        filter: blur(0.2vmin);
+    }
+
+    100% {
+      transform: translateY(-60vmin);
+      opacity: 0;
+      filter: blur(1vmin);
+    }
+}
+
+
+
+
+
+.music-player-container{
+    background: linear-gradient(30deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85));
+    backdrop-filter: blur(10px);
+    height: fit-content;
+    width: 70vw;
+    border-radius: 10px;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: 50%;
+}
+
+.title-music-container{
+    width: 80%;
+    height: 80%;
+    width: fit-content;
+    color: white;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.song-title{
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+.song-author{
+    margin-top: 0.1rem;
+    font-size: 12px;
+    color: rgb(167, 167, 167);
+    letter-spacing: 0.1px;
+}
+
+.controls-music-container{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-song-container{
+    margin-top: 0.6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-bar{
+    height: 3px;
+    border-radius: 3px;
+    width: 100%;
+    background-color: rgb(102, 102, 102);
+    position: relative;
+}
+
+.progress{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.time-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(167, 167, 167);
+    font-size: 12px;
+}
+
+.time-left{
+    margin-top: 0.3rem;
+}
+
+.main-song-controls{
+    height: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    height: 100%;
+    width: auto;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.icon:hover{
+    opacity: 1;
+}
+
+audio{
+    display: none;
+}
+
+/* Estilo existente para .music-player-container */
+.music-player-container{
+    /* Tus estilos actuales */
+    position: absolute;
+    bottom: 50%;
+    /* ... */
+}
+
+/* Media query para pantallas pequeñas */
+@media (min-width: 860px) {
+  .music-player-container {
+    position: fixed; /* Fijar en la parte superior */
+    top: 0; /* Colocar en el tope de la página */
+    bottom: auto; /* Anular la propiedad bottom */
+    width: 50vw; /* Ocupar todo el ancho de la pantalla */
+    height: auto; /* Altura automática */
+    padding: 1rem 0; /* Padding reducido */
+    border-radius: 0; /* Sin bordes redondeados para adaptarse a la pantalla */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2); /* Sombra más suave */
+    transition: all 0.3s ease; /* Una transición suave para los cambios */
+  }
+  
+  /* Opcionalmente, ajusta otros elementos internos si es necesario */
+  .title-music-container, .controls-music-container, .progress-song-container {
+    width: 90%; /* Por ejemplo, podrías querer un ancho relativo dentro del contenedor */
+  }
+  
+  .song-title, .song-author {
+    font-size: smaller; /* Reducir el tamaño del texto */
+  }
+  
+}
+
+
+/* Estilos generales aplicables a cualquier tamaño de pantalla */
+/* ... */

@@ -1,0 +1,111 @@
+@keyframes scrollBg {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-330px);
+    }
+  }
+  
+  .scroll-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 330px;
+    background-color: #E8BA9B;
+    background-image: url('image/fondo_ma.png');
+    background-size: cover;
+    animation: scrollBg 35s linear forwards;
+    filter: blur(8px); /* Aplica desenfoque al fondo */
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+  }
+  
+  /* Asegúrate de que tu contenido esté fuera de .scroll-bg y no herede el desenfoque */
+  .content {
+    position: fixed; /* o `position: absolute;` dependiendo de tu estructura */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Asegura que el contenido esté sobre el fondo */
+    text-align: center;
+  }
+
+/*# sourceMappingURL=indexstyle.css.map */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* O la fuente que prefieras */
+    color: #fff; /* Color blanco para el texto que contrastará con el fondo oscuro */
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); /* Sombra de texto para mejorar la legibilidad */
+  }
+  
+  /* Estilo para el título */
+  #titulo h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #d5c468;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  /* Estilo para el mensaje */
+  #mensaje h2 {
+    font-size: 1.2em; /* Tamaño de fuente menor para el cuerpo del mensaje */
+    max-width: 600px; /* Ancho máximo para una buena legibilidad */
+    margin: auto; /* Centrar el mensaje horizontalmente */
+    line-height: 1.6; /* Espaciado de línea para facilitar la lectura */
+    text-shadow: 1px 1px 3px #000; /* Sombra de texto para mejorar la legibilidad */
+  }
+  
+  .button-89 {
+    --b: 3px;
+    --s: .45em;
+    --color: #ffffff;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: #000000;
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b), #fff 90deg, #a4b1cf 0) var(--_p) var(--_p) / calc(100% - var(--b) - 2* var(--_p)) calc(100% - var(--b) - 2* var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+
+
+  @media (max-width: 600px) {
+    .scroll-bg {
+      animation: scrollBg 35s linear forwards; /* Se aplica la nueva animación */
+      padding-bottom: 165px; /* Se reduce la cantidad de padding */
+    }
+  
+    /* Estilo para el título y el mensaje en pantallas pequeñas */
+    #titulo h1, #mensaje h2 {
+      font-size: 1em; /* Se reduce el tamaño de la fuente */
+      max-width: 90%; /* Se usa un porcentaje para el ancho máximo */
+      margin: 10px auto; /* Se asegura de que el contenido esté centrado */
+    }
+  
+    /* Estilo para el botón en pantallas pequeñas */
+    .button-89 {
+      padding: calc(.3em + var(--s)) calc(.7em + var(--s)); /* Se reduce el padding */
+      font-size: 14px; /* Se reduce el tamaño de la fuente del botón */
+      outline-offset: .2em; /* Se ajusta el outline-offset para ser más pequeño */
+    }
+  }
