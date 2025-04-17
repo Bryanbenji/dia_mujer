@@ -758,6 +758,27 @@ audio {
 /* Estilos generales aplicables a cualquier tamaño de pantalla */
 /* Teléfonos pequeños (menos de 480px) */
 @media (max-width: 480px) {
+    html,
+    body {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .music-player-container {
+        width: 79vw!important;
+        height: 39vw!important;
+        padding: 1.5rem;
+        top: 17%;
+        left: 7.5%;
+        transform: translateY(0);
+        border-radius: 12px;
+    }
+
+    .flower_wrapper,
+    .flower_wrapper2,
+    .flower_wrapper3 {
+        scale: 1;
+    }
 
     .flower_wrapper {
         left: 50% !important;
