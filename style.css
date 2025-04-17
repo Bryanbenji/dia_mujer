@@ -756,12 +756,67 @@ audio {
 
 
 /* Estilos generales aplicables a cualquier tamaño de pantalla */
+@media (max-width: 400px) {
+    html,
+    body {
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .music-player-container {
+        width: 79vw!important;
+        height: 37vw!important;
+        padding: 1.5rem;
+        top: 17%;
+        left: 7.5%;
+        transform: translateY(0);
+        border-radius: 12px;
+    }
+
+    .flower_wrapper,
+    .flower_wrapper2,
+    .flower_wrapper3 {
+        scale: 1;
+    }
+
+    .flower_wrapper {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .flower_petal {
+        bottom: 69vmin !important;
+        width: 12vmin;
+        height: 27vmin;
+    }
+
+    .flower_stem {
+        height: 80vmin !important;
+    }
+
+    .flower_center {
+        width: 24vmin;
+        height: 24vmin;
+    }
+
+    .flower_leaf {
+        width: 9vmin;
+        height: 11vmin;
+    }
+}
+
 /* Teléfonos pequeños (menos de 480px) */
 @media (max-width: 480px) {
     html,
     body {
         height: 100%;
         overflow-y: hidden;
+        overflow-x: hidden;
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .music-player-container {
@@ -783,7 +838,6 @@ audio {
     .flower_wrapper {
         left: 50% !important;
         transform: translateX(-50%);
-        bottom: -1vmin;
     }
 
     .flower_petal {
